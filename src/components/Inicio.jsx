@@ -19,7 +19,7 @@ export const Inicio = () => {
           <h1>
             Vivero <span>Mis Raices</span>
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Descubre la magia de la naturaleza en nuestro vivero. Encuentra la planta perfecta para transformar tu hogar o jardín.</p>
         </div>
       </div>
 
