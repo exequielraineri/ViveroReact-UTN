@@ -1,0 +1,32 @@
+.items {
+  width: 100%;
+  justify-content: end;
+  gap: 20px;
+}
+
+.items a {
+  text-decoration: none;
+}
+
+.bloque-menu {
+  backdrop-filter: blur(15px);
+}
+
+
+.bloque-menu .items a {
+  font-size: .9em;
+  color: #f0f0f0;
+  border-bottom: 1px solid white;
+}
+
+.items a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+  transition: .2s ease all;
+}
+
+.bloque-menu img:hover {
+  transition: .3s;
+  border-radius: 1000px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}

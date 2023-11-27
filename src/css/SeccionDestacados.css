@@ -1,0 +1,117 @@
+.destacados {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0f0f0;
+  height: 80vh;
+}
+
+.destacados h3 {
+  font-size: 1.7em;
+  padding-bottom: 5px;
+}
+
+.destacados section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.destacados article {
+  text-align: end;
+  font-size: .9em;
+}
+
+.destacados article h4 {
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.destacados h3 {
+  border-bottom: solid 1px rgba(4, 129, 10, 0.9);
+}
+
+.destacados p {
+  width: 100%;
+}
+
+
+.destacados article:hover img {
+  cursor: pointer;
+  transition: .4s ease all;
+  box-shadow: 0 0 5px rgba(4, 129, 10, 0.6);
+}
+
+.destacados article:hover h4 {
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.destacados div{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding: 0 20px;  
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .destacados{
+    height: auto;
+  }
+  
+  .destacados section{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+  .destacados section article{
+    width: 100%;
+  }
+  
+  .destacados article cite{
+    font-size: .8em;
+  }
+  
+  .destacados p{
+    font-size: .8em;
+    
+  }
+  
+  .destacados article p{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  .destacados article h4{
+    font-size: 1em;
+    color: rgba(4, 129, 10, 0.9);
+  }
+  
+  .destacados div{
+    padding: 0;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+

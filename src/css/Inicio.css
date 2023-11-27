@@ -1,0 +1,103 @@
+:root * {
+    box-sizing: border-box;
+}
+
+
+
+.hero {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("../assets/img/pexels-kelly-2453551.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 1;
+    filter: grayscale(30%);
+}
+
+.hero-text {
+    color: white;
+    position: absolute;
+    background-color: rgba(4, 129, 10, 0.3);
+    backdrop-filter: blur(1px);
+    width: 100%;
+    bottom: 50px;
+    left: 0;
+    padding: 10px 10%;
+    animation: salida auto linear;
+    animation-timeline: scroll();
+    animation-range: 10%;
+}
+
+@keyframes salida {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.hero-text h1 {
+    font-weight: lighter;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px white;
+
+}
+
+.hero-text span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.hero-text p {
+    opacity: 80%;
+    font-size: .9em;
+}
+
+.banner {
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(4, 129, 10, 0.6);
+}
+
+
+.banner p {
+    padding: 10px 0;
+    margin: 0;
+    color: white;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f0f0f0;
+    padding: 30px 10px;
+    height: 15vh;
+    gap: 10px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.4));
+}
+
+
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: .7em;
+}
+
+footer p:first-child {
+    font-size: .6em;
+}

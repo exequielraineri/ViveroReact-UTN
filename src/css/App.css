@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: auto;
+}
+
+section article {
+    width: 25%;
+    margin: 0px auto;
+    max-width: 200px;
+}
+
+section article img {
+    width: 100%;
+}
+
+section article h2 {
+    width: 100%;
+    font-size: .8em;
+}
