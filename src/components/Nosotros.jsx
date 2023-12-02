@@ -16,7 +16,7 @@ export const Nosotros = ({ logo }) => {
         <img
           src={logo}
           width={100}
-          alt="logo"
+          alt="Logo Mis Raices"
         />
         <h2>Mis Raices</h2>
         <p>
