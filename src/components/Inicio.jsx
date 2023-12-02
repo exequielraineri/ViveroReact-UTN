@@ -13,7 +13,7 @@ const Banner = (props) => {
   );
 };
 
-export const Inicio = () => {
+export const Inicio = ({ cactus, singonio, imgAux, img2, img12, img5 }) => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -35,13 +35,21 @@ export const Inicio = () => {
         </div>
       </div>
 
-      <SeccionCategorias></SeccionCategorias>
+      <SeccionCategorias
+        cactus={cactus}
+        singonio={singonio}
+        imgAux={imgAux}
+      ></SeccionCategorias>
 
       <Banner
         p1="Transforma tu entorno"
         p2="Con nuestras hermosas plantas"
       ></Banner>
-      <SeccionDestacados></SeccionDestacados>
+      <SeccionDestacados
+        img2={img2}
+        img12={img12}
+        img5={img5}
+      ></SeccionDestacados>
     </>
   );
 };

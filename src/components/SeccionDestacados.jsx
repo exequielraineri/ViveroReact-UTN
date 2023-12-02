@@ -3,26 +3,26 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "../css/SeccionDestacados.css";
 import { useEffect } from "react";
-export const SeccionDestacados = () => {
+export const SeccionDestacados = ({ img2, img12, img5 }) => {
   const plantas = [
     {
       id: 1,
       nombre: "Centro de mesa",
-      img: "src/assets/img/Artesanias/IMG_20210715_120447.jpg",
+      img: img12,
       categoria: "Accesorio",
       precio: "$3.320,00",
     },
     {
       id: 2,
       nombre: "Cactus Chin",
-      img: "src/assets/img/Plantas/cactus_chin.jpg",
+      img: img2,
       categoria: "Interior",
       precio: "$5.320,00",
     },
     {
       id: 3,
       nombre: "Kalanchue",
-      img: "src/assets/img/Plantas/kalanchoe.jpeg",
+      img: img5,
       categoria: "Exterior",
       precio: "$2.420,00",
     },

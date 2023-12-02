@@ -3,22 +3,22 @@ import "../css/SeccionCategorias.css";
 import { ArticuloCategoria } from "./ArticuloCategoria";
 import Aos from "aos";
 import "aos/dist/aos.css";
-export const SeccionCategorias = () => {
+export const SeccionCategorias = ({ cactus, singonio, imgAux }) => {
   const categorias = [
     {
       id: 1,
       nombre: "Exterior",
-      img: "./assets/img/Plantas/cactus_cebra.jpg",
+      img: cactus,
     },
     {
       id: 2,
       nombre: "Interoir",
-      img: "../assets/img/Plantas/singonio.jpg",
+      img: singonio,
     },
     {
       id: 3,
       nombre: "Accesorios",
-      img: "../../img/Artesanias/IMG_20210715_115738.jpg",
+      img: imgAux,
     },
   ];
 

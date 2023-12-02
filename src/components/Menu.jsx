@@ -19,7 +19,7 @@ export const Menu = ({ carrito }) => {
     >
       <Container>
         <Navbar>
-          <Link to={""}>
+          <Link to={"./"}>
             <img
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -36,12 +36,12 @@ export const Menu = ({ carrito }) => {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <Link to={"/"}>Inicio</Link>
-            <Link to={"/productos"}>Productos</Link>
-            <Link to={"/carrito"}>
+            <Link to={"./"}>Inicio</Link>
+            <Link to={"./productos"}>Productos</Link>
+            <Link to={"./carrito"}>
               Carrito <span>{carrito.length}</span>
             </Link>
-            <Link to={"/nosotros"}>Nosotros</Link>
+            <Link to={"./nosotros"}>Nosotros</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

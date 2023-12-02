@@ -165,11 +165,20 @@ function App() {
       <Menu carrito={carrito}></Menu>
       <Routes>
         <Route
-          path="/"
-          element={<Inicio></Inicio>}
+          path={"./"}
+          element={
+            <Inicio
+              cactus={img4}
+              singonio={img6}
+              imgAux={img11}
+              img2={img2}
+              img12={img12}
+              img5={img5}
+            ></Inicio>
+          }
         ></Route>
         <Route
-          path={"/productos"}
+          path={"./productos"}
           element={
             <Productos
               plantas={plantas}
@@ -180,11 +189,11 @@ function App() {
           }
         ></Route>
         <Route
-          path={"/carrito"}
+          path={"./carrito"}
           element={<Carrito carrito={carrito}></Carrito>}
         ></Route>
         <Route
-          path={"/nosotros"}
+          path={"./nosotros"}
           element={<Nosotros></Nosotros>}
         ></Route>
       </Routes>
