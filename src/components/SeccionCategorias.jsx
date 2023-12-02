@@ -12,7 +12,7 @@ export const SeccionCategorias = ({ cactus, singonio, imgAux }) => {
     },
     {
       id: 2,
-      nombre: "Interoir",
+      nombre: "Interior",
       img: singonio,
     },
     {
