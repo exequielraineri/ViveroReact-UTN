@@ -8,12 +8,7 @@ const ArticuloCargando = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
       className="articulo-cargando"
-    >
-      <div className="imagen"></div>
-      <div className="cite"></div>
-      <div className="parrafo"></div>
-      <div className="boton"></div>
-    </article>
+    ></article>
   );
 };
 

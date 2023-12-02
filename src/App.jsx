@@ -1,164 +1,196 @@
-import './css/App.css';
-import { Inicio } from './components/Inicio';
-import { Productos } from './components/Productos';
-import { Carrito } from './components/Carrito';
-import { Menu } from './components/Menu';
-import { Footer } from './components/Footer';
-import { Nosotros } from './components/Nosotros';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
+import "./css/App.css";
+import { Inicio } from "./components/Inicio";
+import { Productos } from "./components/Productos";
+import { Carrito } from "./components/Carrito";
+import { Menu } from "./components/Menu";
+import { Footer } from "./components/Footer";
+import { Nosotros } from "./components/Nosotros";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+
+import img1 from "../src/assets/img/Plantas/escila.jpg";
+import img2 from "../src/assets/img/Plantas/cactus_chin.jpg";
+import img3 from "../src/assets/img/Plantas/echinocereus_coccineus.jpg";
+import img4 from "../src/assets/img/Plantas/cactus_cebra.jpg";
+import img5 from "../src/assets/img/Plantas/kalanchoe.jpg";
+import img6 from "../src/assets/img/Plantas/singonio.jpg";
+import img7 from "../src/assets/img/Plantas/maihueniopsis_molinensis.jpg";
+import img8 from "../src/assets/img/Plantas/malvon_rosado.jpg";
+import img9 from "../src/assets/img/Plantas/ombligo_de_reina.jpg";
+import img10 from "../src/assets/img/Plantas/tradescantia_sillamontana.jpg";
+import img11 from "../src/assets/img/Artesanias/IMG_20210715_115738.jpg";
+import img12 from "../src/assets/img/Artesanias/IMG_20210715_120447.jpg";
+import img13 from "../src/assets/img/Artesanias/IMG_20210901_144651.jpg";
+import img14 from "../src/assets/img/Artesanias/IMG_20210901_144943.jpg";
+import img15 from "../src/assets/img/Artesanias/IMG_20210901_102859.jpg";
+import img16 from "../src/assets/img/Artesanias/IMG_20220225_112423.jpg";
+import img17 from "../src/assets/img/Artesanias/IMG_20220715_115139.jpg";
+import img18 from "../src/assets/img/Artesanias/IMG_20220715_121652.jpg";
+
 function App() {
   const [plantas, setPlantas] = useState([
     {
       id: 1,
       categoria: "Exterior",
-      img: "src/assets/img/Plantas/escila.jpg",
+      img: img1,
       nombre: "Escilla",
-      precio: 4500.00,
+      precio: 4500.0,
     },
     {
       id: 2,
       categoria: "Exterior",
-      img: "src/assets/img/Plantas/cactus_chin.jpg",
+      img: "./assets/img/Plantas/cactus_chin.jpg",
       nombre: "Cactus Chin",
-      precio: 4500.00,
+      precio: 4500.0,
     },
     {
       id: 3,
       categoria: "Exterior",
-      img: "src/assets/img/Plantas/echinocereus_coccineus.jpg",
+      img: "./img/Plantas/echinocereus_coccineus.jpg",
       nombre: "Echionocerus Coccineus",
-      precio: 3500.00,
+      precio: 3500.0,
     },
     {
       id: 4,
       categoria: "Exterior",
-      img: "src/assets/img/Plantas/cactus_cebra.jpg",
+      img: img4,
       nombre: "Cactus Cebra",
       precio: 4500,
     },
     {
       id: 5,
       categoria: "Exterior",
-      img: "src/assets/img/Plantas/kalanchoe.jpeg",
+      img: img5,
       nombre: "Kalanchoe",
       precio: 6500,
     },
     {
       id: 6,
       categoria: "Interior",
-      img: "src/assets/img/Plantas/singonio.jpg",
+      img: img6,
       nombre: "Singonio",
       precio: 14500,
     },
     {
       id: 7,
       categoria: "Interior",
-      img: "src/assets/img/Plantas/maihueniopsis_molinensis.jpg",
+      img: img7,
       nombre: "Maihueniopsis Molinesis",
       precio: 3500,
     },
     {
       id: 8,
       categoria: "Interior",
-      img: "src/assets/img/Plantas/malvon_rosado.jpeg",
+      img: img8,
       nombre: "Malvon Rosado",
       precio: 6500,
     },
     {
       id: 9,
       categoria: "Interior",
-      img: "src/assets/img/Plantas/ombligo_de_reina.jpg",
+      img: img9,
       nombre: "Ombligo de Reina",
       precio: 6450,
     },
     {
       id: 10,
       categoria: "Interior",
-      img: "src/assets/img/Plantas/tradescantia_sillamontana.jpg",
+      img: img10,
       nombre: "Tradescantia Sillamontana",
       precio: 3200,
     },
     {
       id: 11,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20210715_115738.jpg",
+      img: img11,
       nombre: "Porta Aros",
       precio: 4500,
     },
     {
       id: 12,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20210715_120447.jpg",
+      img: img12,
       nombre: "Centro de Mesa",
       precio: 3500,
     },
     {
       id: 13,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20210901_144651.jpg",
+      img: img13,
       nombre: "Imanes",
       precio: 2500,
     },
     {
       id: 14,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20210901_144943.jpg",
+      img: img14,
       nombre: "Porta Saumerios",
       precio: 5000,
     },
     {
       id: 15,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20210901_102859.jpg",
+      img: img15,
       nombre: "Clips",
       precio: 1000,
     },
     {
       id: 16,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20220225_112423.jpg",
+      img: img16,
       nombre: "Porta Saumerio",
       precio: 2500,
     },
     {
       id: 17,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20220715_115139.jpg",
+      img: img17,
       nombre: "Porta Vela",
       precio: 7500,
     },
     {
       id: 18,
       categoria: "Accesorio",
-      img: "src/assets/img/Artesanias/IMG_20220715_121652.jpg",
+      img: img18,
       nombre: "Llamador de Angel",
       precio: 1500,
     },
-
   ]);
-
-
-
 
   const [carrito, setCarrito] = useState([]);
 
-
-
   return (
-    <div className='aplicacion'>
+    <div className="aplicacion">
       <Menu carrito={carrito}></Menu>
       <Routes>
-        <Route path='/' element={<Inicio></Inicio>} ></Route>
-        <Route path='/productos' element={<Productos plantas={plantas} setPlantas={setPlantas} carrito={carrito} setCarrito={setCarrito}></Productos>} ></Route>
-        <Route path='/carrito' element={<Carrito carrito={carrito}></Carrito>} ></Route>
-        <Route path='/nosotros' element={<Nosotros></Nosotros>} ></Route>
-
+        <Route
+          path="/"
+          element={<Inicio></Inicio>}
+        ></Route>
+        <Route
+          path={"/productos"}
+          element={
+            <Productos
+              plantas={plantas}
+              setPlantas={setPlantas}
+              carrito={carrito}
+              setCarrito={setCarrito}
+            ></Productos>
+          }
+        ></Route>
+        <Route
+          path={"/carrito"}
+          element={<Carrito carrito={carrito}></Carrito>}
+        ></Route>
+        <Route
+          path={"/nosotros"}
+          element={<Nosotros></Nosotros>}
+        ></Route>
       </Routes>
       <Footer></Footer>
-    </div >
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

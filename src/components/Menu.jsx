@@ -18,15 +18,17 @@ export const Menu = ({ carrito }) => {
       data-bs-theme="light"
     >
       <Container>
-        <Navbar.Brand href="/">
-          <img
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            src={logo}
-            width={60}
-            alt="Logo Vivero Mis Raices"
-          />
-        </Navbar.Brand>
+        <Navbar>
+          <Link to={""}>
+            <img
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              src={logo}
+              width={60}
+              alt="Logo Vivero Mis Raices"
+            />
+          </Link>
+        </Navbar>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
