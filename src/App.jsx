@@ -40,14 +40,14 @@ function App() {
     {
       id: 2,
       categoria: "Exterior",
-      img: "./assets/img/Plantas/cactus_chin.jpg",
+      img: img2,
       nombre: "Cactus Chin",
       precio: 4500.0,
     },
     {
       id: 3,
       categoria: "Exterior",
-      img: "./img/Plantas/echinocereus_coccineus.jpg",
+      img: img3,
       nombre: "Echionocerus Coccineus",
       precio: 3500.0,
     },
