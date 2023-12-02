@@ -9,24 +9,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 
-import img1 from "../src/assets/img/Plantas/escila.jpg";
-import img2 from "../src/assets/img/Plantas/cactus_chin.jpg";
-import img3 from "../src/assets/img/Plantas/echinocereus_coccineus.jpg";
-import img4 from "../src/assets/img/Plantas/cactus_cebra.jpg";
-import img5 from "../src/assets/img/Plantas/kalanchoe.jpg";
-import img6 from "../src/assets/img/Plantas/singonio.jpg";
-import img7 from "../src/assets/img/Plantas/maihueniopsis_molinensis.jpg";
-import img8 from "../src/assets/img/Plantas/malvon_rosado.jpg";
-import img9 from "../src/assets/img/Plantas/ombligo_de_reina.jpg";
-import img10 from "../src/assets/img/Plantas/tradescantia_sillamontana.jpg";
-import img11 from "../src/assets/img/Artesanias/IMG_20210715_115738.jpg";
-import img12 from "../src/assets/img/Artesanias/IMG_20210715_120447.jpg";
-import img13 from "../src/assets/img/Artesanias/IMG_20210901_144651.jpg";
-import img14 from "../src/assets/img/Artesanias/IMG_20210901_144943.jpg";
-import img15 from "../src/assets/img/Artesanias/IMG_20210901_102859.jpg";
-import img16 from "../src/assets/img/Artesanias/IMG_20220225_112423.jpg";
-import img17 from "../src/assets/img/Artesanias/IMG_20220715_115139.jpg";
-import img18 from "../src/assets/img/Artesanias/IMG_20220715_121652.jpg";
+import img1 from "./assets/img/Plantas/escila.jpg";
+import img2 from "./assets/img/Plantas/cactus_chin.jpg";
+import img3 from "./assets/img/Plantas/echinocereus_coccineus.jpg";
+import img4 from "./assets/img/Plantas/cactus_cebra.jpg";
+import img5 from "./assets/img/Plantas/kalanchoe.jpeg";
+import img6 from "./assets/img/Plantas/singonio.jpg";
+import img7 from "./assets/img/Plantas/maihueniopsis_molinensis.jpg";
+import img8 from "./assets/img/Plantas/malvon_rosado.jpeg";
+import img9 from "./assets/img/Plantas/ombligo_de_reina.jpg";
+import img10 from "./assets/img/Plantas/tradescantia_sillamontana.jpg";
+import img11 from "./assets/img/Artesanias/IMG_20210715_115738.jpg";
+import img12 from "./assets/img/Artesanias/IMG_20210715_120447.jpg";
+import img13 from "./assets/img/Artesanias/IMG_20210901_144651.jpg";
+import img14 from "./assets/img/Artesanias/IMG_20210901_144943.jpg";
+import img15 from "./assets/img/Artesanias/IMG_20210901_102859.jpg";
+import img16 from "./assets/img/Artesanias/IMG_20220225_112423.jpg";
+import img17 from "./assets/img/Artesanias/IMG_20220715_115139.jpg";
+import img18 from "./assets/img/Artesanias/IMG_20220715_121652.jpg";
 
 function App() {
   const [plantas, setPlantas] = useState([
