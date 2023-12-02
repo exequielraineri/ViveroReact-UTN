@@ -1,43 +1,50 @@
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "../css/SeccionDestacados.css";
+import { useEffect } from "react";
 export const SeccionDestacados = () => {
+  const plantas = [
+    {
+      id: 1,
+      nombre: "Centro de mesa",
+      img: "src/assets/img/Artesanias/IMG_20210715_120447.jpg",
+      categoria: "Accesorio",
+      precio: "$3.320,00",
+    },
+    {
+      id: 2,
+      nombre: "Cactus Chin",
+      img: "src/assets/img/Plantas/cactus_chin.jpg",
+      categoria: "Interior",
+      precio: "$5.320,00",
+    },
+    {
+      id: 3,
+      nombre: "Kalanchue",
+      img: "src/assets/img/Plantas/kalanchoe.jpeg",
+      categoria: "Exterior",
+      precio: "$2.420,00",
+    },
+  ];
 
-  const plantas = [{
-    id: 1,
-    nombre: "Centro de mesa",
-    img: "src/assets/img/Artesanias/IMG_20210715_120447.jpg",
-    categoria: "Accesorio",
-    precio: "$3.320,00"
-  },
-  {
-    id: 2,
-    nombre: "Cactus Chin",
-    img: "src/assets/img/Plantas/cactus_chin.jpg",
-    categoria: "Interior",
-    precio: "$5.320,00"
-  },
-  {
-    id: 3,
-    nombre: "Kalanchue",
-    img: "src/assets/img/Plantas/kalanchoe.jpeg",
-    categoria: "Exterior",
-    precio: "$2.420,00"
-
-  }];
-
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="destacados">
       <h3>Destacados</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Reprehenderit, modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        modi.
       </p>
-      <section>
-
-        {
-          plantas.map((planta) => {
-            return <article key={planta.id}>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        {plantas.map((planta) => {
+          return (
+            <article key={planta.id}>
               <img
                 src={planta.img}
                 alt={planta.nombre}
@@ -46,15 +53,17 @@ export const SeccionDestacados = () => {
               <h4>{planta.nombre}</h4>
               <p>{planta.precio}</p>
             </article>
-          })
-
-        }
-
-
+          );
+        })}
       </section>
       <div>
-        <Link to="/productos" className="btn btn-light">Ver Todo ➡</Link>
+        <Link
+          to="/productos"
+          className="btn btn-light"
+        >
+          Ver Todo ➡
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};

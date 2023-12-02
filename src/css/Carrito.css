@@ -21,6 +21,8 @@
   border-bottom: 1px green solid;
   padding-bottom: 20px;
   margin-top: 10px;
+  height: 30vh;
+  font-size: .8em;
 }
 
 .carrito .carrito-section .carrito-article div {
@@ -37,8 +39,8 @@
 
 .carrito img {
   object-fit: cover;
-  max-width: 200px;
-  width: 100%;
+  max-width: 40%;
+  height: 100%
 }
 
 .pie-carrito {

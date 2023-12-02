@@ -17,18 +17,16 @@
 
 
 
-section {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
+section {}
 
 section article {
   text-align: end;
   font-size: .9em;
   margin-bottom: 10%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
 }
 
 section article h4 {
