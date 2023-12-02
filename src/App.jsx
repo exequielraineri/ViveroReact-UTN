@@ -8,7 +8,7 @@ import { Nosotros } from "./components/Nosotros";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
-
+import logo from "./assets/img/logo.png";
 import img1 from "./assets/img/Plantas/escila.jpg";
 import img2 from "./assets/img/Plantas/cactus_chin.jpg";
 import img3 from "./assets/img/Plantas/echinocereus_coccineus.jpg";
@@ -194,7 +194,7 @@ function App() {
         ></Route>
         <Route
           path={"/ViveroReact-UTN/nosotros"}
-          element={<Nosotros></Nosotros>}
+          element={<Nosotros logo={logo}></Nosotros>}
         ></Route>
       </Routes>
       <Footer></Footer>

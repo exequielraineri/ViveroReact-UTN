@@ -2,7 +2,7 @@ import "../css/Nosotros.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-export const Nosotros = () => {
+export const Nosotros = ({ logo }) => {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -14,7 +14,7 @@ export const Nosotros = () => {
         data-aos-duration="1000"
       >
         <img
-          src="src/assets/img/logo.png"
+          src={logo}
           width={100}
           alt="logo"
         />
@@ -35,7 +35,7 @@ export const Nosotros = () => {
             data-aos-duration="500"
           >
             <img
-              src="src/assets/img/logo.png"
+              src={logo}
               width={100}
               alt="Default"
             />
@@ -54,7 +54,7 @@ export const Nosotros = () => {
             data-aos-duration="500"
           >
             <img
-              src="src/assets/img/logo.png"
+              src={logo}
               width={100}
               alt="Default"
             />
