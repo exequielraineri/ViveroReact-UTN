@@ -165,7 +165,7 @@ function App() {
       <Menu carrito={carrito}></Menu>
       <Routes>
         <Route
-          path={"./"}
+          path={"/ViveroReact-UTN"}
           element={
             <Inicio
               cactus={img4}
@@ -178,7 +178,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={"./productos"}
+          path={"/ViveroReact-UTN/productos"}
           element={
             <Productos
               plantas={plantas}
@@ -189,11 +189,11 @@ function App() {
           }
         ></Route>
         <Route
-          path={"./carrito"}
+          path={"/ViveroReact-UTN/carrito"}
           element={<Carrito carrito={carrito}></Carrito>}
         ></Route>
         <Route
-          path={"./nosotros"}
+          path={"/ViveroReact-UTN/nosotros"}
           element={<Nosotros></Nosotros>}
         ></Route>
       </Routes>

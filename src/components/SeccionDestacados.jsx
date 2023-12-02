@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "../css/SeccionDestacados.css";
 import { useEffect } from "react";
 export const SeccionDestacados = ({ img2, img12, img5 }) => {
   const plantas = [
@@ -32,7 +31,7 @@ export const SeccionDestacados = ({ img2, img12, img5 }) => {
     Aos.init();
   }, []);
   return (
-    <div className="destacados">
+    <div className="seccion">
       <h3>Destacados</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
@@ -50,7 +49,13 @@ export const SeccionDestacados = ({ img2, img12, img5 }) => {
                 alt={planta.nombre}
               />
               <cite>{planta.categoria}</cite>
-              <h4>{planta.nombre}</h4>
+              <h4
+                style={{
+                  textAlign: "end",
+                }}
+              >
+                {planta.nombre}
+              </h4>
               <p>{planta.precio}</p>
             </article>
           );
@@ -58,7 +63,7 @@ export const SeccionDestacados = ({ img2, img12, img5 }) => {
       </section>
       <div>
         <Link
-          to="/productos"
+          to={"/ViveroReact-UTN/productos"}
           className="btn btn-light"
         >
           Ver Todo ➡

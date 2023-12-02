@@ -26,7 +26,7 @@ export const SeccionCategorias = ({ cactus, singonio, imgAux }) => {
     Aos.init();
   }, []);
   return (
-    <div className="categorias">
+    <div className="seccion">
       <h3>Categorias</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,

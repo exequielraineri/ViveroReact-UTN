@@ -19,7 +19,7 @@ export const Menu = ({ carrito }) => {
     >
       <Container>
         <Navbar>
-          <Link to={"./"}>
+          <Link to={"/ViveroReact-UTN"}>
             <img
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -36,12 +36,12 @@ export const Menu = ({ carrito }) => {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <Link to={"./"}>Inicio</Link>
-            <Link to={"./productos"}>Productos</Link>
-            <Link to={"./carrito"}>
+            <Link to={"/ViveroReact-UTN"}>Inicio</Link>
+            <Link to={"/ViveroReact-UTN/productos"}>Productos</Link>
+            <Link to={"/ViveroReact-UTN/carrito"}>
               Carrito <span>{carrito.length}</span>
             </Link>
-            <Link to={"./nosotros"}>Nosotros</Link>
+            <Link to={"/ViveroReact-UTN/nosotros"}>Nosotros</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

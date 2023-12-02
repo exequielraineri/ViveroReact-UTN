@@ -7,13 +7,11 @@
 
 section {
     display: flex;
-    flex-wrap: wrap;
     gap: 5px;
     margin: auto;
 }
 
 section article {
-    width: 25%;
     margin: 0px auto;
     max-width: 200px;
 }
